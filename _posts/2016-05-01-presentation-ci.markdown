@@ -5,10 +5,10 @@ date:   2016-05-01 11:15:32 +0000
 categories: CI
 ---
 
-L'intégration Continue (CI pour Continuous Integration) est un modèle d'optimisation de tâches complexes. Dans la plupart des cas, cela consiste à faire exécuter des jeux de tests et des compilation sur un serveur dédié.
+L'intégration Continue (CI pour Continuous Integration) est un modèle d'optimisation de tâches complexes. Dans la plupart des cas, cela consiste à faire exécuter des jeux de tests et des compilations sur un serveur dédié.
 
 ## Objectifs
-Ce guide a pour objectif de vous donner les bases de vocabulaire et de concepts utilisés en Intégration Continue. Il existe à ce jour une très grande quantité d'outils d'Intégration Continue, il serait illusoire de vouloir tout les citer. Cependant des noms sortent du lot. Je traiterai séparément chaque outil.
+Ce guide a pour objectif de vous donner les bases de vocabulaire et de concepts utilisés en Intégration Continue. Il existe à ce jour une très grande quantité d'outils d'Intégration Continue, il serait illusoire de vouloir tous les citer. Cependant des noms sortent du lot. Je traiterai séparément chaque outil.
 Pour bien appréhender ce guide, il est nécessaire de posséder des bases sur Git et de comprendre comment fonctionnent les branches.
 
 ## Qu'est ce que la CI
@@ -53,7 +53,7 @@ Comme le projet est complexe, une partie des tests seront effectués en parallè
 #### Compte rendu
 La construction et les tests sont terminés, un rapport est produit et publié sur un espace prévu à cet effet.
 
-Si des tests ont échoué, des alertes seront envoyés et le résultat sera marqué comme valide ou invalide en fonction de la gravité des erreurs.
+Si des tests ont échoué, des alertes seront envoyées et le résultat sera marqué comme valide ou invalide en fonction de la gravité des erreurs.
 
 #### Intégration
 En fonction du compte rendu, l'intégration du code produit sera effectuée dans la branche principale du projet, soit de façon automatique, soit sous la forme de pull/merge request.
@@ -68,7 +68,7 @@ Il a la réputation d'être extrêmement complexe à prendre en main mais d'êtr
 
 L'interface est vieillissante et anti-ergonomique, cependant depuis l'arrivée du module workflow, renommé pipeline depuis Jenkins 2.0, l'utilisation a été totalement revue et est maintenant à la portée de tous. Il est bien entendu toujours possible de créer ses Jobs (ancienne méthode) via l'interface, ou bien en utilisant Ant ou Maven.
 
-Je vous conseillerais de bien lire la documentation sur les pipelines, l'utilisation est relativement simple, la syntaxe est en groovy (http://groovy-lang.org/) et est très proche du java/javascript.
+Je vous conseillerais de bien lire la documentation sur les pipelines, l'utilisation est relativement simple, la syntaxe est en groovy (http://groovy-lang.org/) et est très proche du php/java/javascript.
 https://Jenkins.io/solutions/pipeline/
 
 Le principal atout de Jenkins est d'être totalement multi-plateforme, il est codé en java et tourne sous linux/mac/windows quasiment sans problèmes. Si le système d'exploitation sur lequel est installé le worker est capable d'éxécuter une commande, alors Jenkins pourra utiliser cette commande. il est ainsi possible d'utiliser aussi bien des scripts shell que des scripts php pour les différentes étapes de construction.
