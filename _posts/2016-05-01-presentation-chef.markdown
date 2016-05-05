@@ -12,7 +12,7 @@ L’orchestration consiste à piloter la configuration d’un Node (un serveur) 
 L’objectif de ce type d’outils est de déployer la même configuration sur un ensemble de serveurs, par exemple pour industrialiser et automatiser la mise en production de nouveaux serveurs.
 
 ## Objectifs
-L’objectif de ce guide est de comprendre les principes de bases de l’outil afin de mieux comprendre dans quelle mesure il pourrait être mis en application.
+L’objectif de ce guide est de comprendre les principes de bases de l’outil afin de mieux évaluer dans quelle mesure il pourrait être mis en application.
 
 Le guide permet de présenter les différents éléments qui composent Chef et leurs différentes imbrications.
 
