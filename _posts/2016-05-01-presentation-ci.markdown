@@ -68,25 +68,25 @@ Il a la réputation d'être extrêmement complexe à prendre en main mais d'êtr
 
 L'interface est vieillissante et anti-ergonomique, cependant depuis l'arrivée du module workflow, renommé pipeline depuis Jenkins 2.0, l'utilisation a été totalement revue et est maintenant à la portée de tous. Il est bien entendu toujours possible de créer ses Jobs (ancienne méthode) via l'interface, ou bien en utilisant Ant ou Maven.
 
-Je vous conseillerais de bien lire la documentation sur les pipelines, l'utilisation est relativement simple, la syntaxe est en groovy (http://groovy-lang.org/) et est très proche du php/java/javascript.
-https://Jenkins.io/solutions/pipeline/
+Je vous conseillerais de bien lire la [documentation sur les pipelines](https://Jenkins.io/solutions/pipeline/){:target="_blank_"}, l'utilisation est relativement simple, la syntaxe est en [groovy](http://groovy-lang.org/){:target="_blank_"} et est très proche du php/java/javascript.
+
 
 Le principal atout de Jenkins est d'être totalement multi-plateforme, il est codé en java et tourne sous linux/mac/windows quasiment sans problèmes. Si le système d'exploitation sur lequel est installé le worker est capable d'éxécuter une commande, alors Jenkins pourra utiliser cette commande. il est ainsi possible d'utiliser aussi bien des scripts shell que des scripts php pour les différentes étapes de construction.
 
 #### Travis
 Travis CI est un outil de CI de plus en plus utilisé par les projets OpenSource sur GitHub, il s'intègre très facilement aux projets existant en reliant le compte github avec le compte Travis.
 
-L'utilisation s'effectue par le bias d'un script Travis nommé .travis.xml et qui sera placé à la racine du projet. Celui-ci décrit un ensemble de tâches, la documentation est extrêmement bien faite et je vous la recommande https://docs.travis-ci.com/
+L'utilisation s'effectue par le bias d'un script Travis nommé .travis.xml et qui sera placé à la racine du projet. Celui-ci décrit un ensemble de tâches, la [documentation](https://docs.travis-ci.com/){:target="_blank_"} est extrêmement bien faite et je vous la recommande
 
 #### GitlabCI
 GitlabCI est un projet récent. il est basé et inclus dans le projet GitLab qui est un gestionaire de dépot Git.
 
 L'utilisation de GitlabCI si on utilise Gitlab est totalement transparente, il suffit de configurer des runners dans gitlabci et de déposer un fichier .gitlab-ci.yml à la racine du projet.
 
-La syntaxe est très simple et ressemble beaucoup à celle de Travis CI, la documentation est simple et très bien illustrée http://doc.gitlab.com/ce/ci/quick_start/README.html
+La syntaxe est très simple et ressemble beaucoup à celle de Travis CI, la [documentation](http://doc.gitlab.com/ce/ci/quick_start/README.html){:target="_blank_"} est simple et très bien illustrée
 
 ## Comment choisir son outil ?
-La plupart des outils se valent, mais certains ont des pré-requis et des spécificités.
+La plupart des outils cités se valent, mais certains ont des pré-requis et des spécificités.
 
 #### Tout terrain
 Vous voulez un système tout terrain, prenez Jenkins, il est possible de tout faire avec, la prise en main est un peu complexe au début, mais l'outil est très performant.

@@ -72,6 +72,6 @@ Comme vous l’aurez compris, Chef est un outil pour lequel le vocabulaire est a
 
 Nous allons par la suite voir les cas d’utilisation suivants :
 
-- Installer Chef-server
+- [Installer Chef-server]({% post_url 2016-05-05-installation-chef %})
 - Utiliser Chef-client
 - Créer un Cookbook
