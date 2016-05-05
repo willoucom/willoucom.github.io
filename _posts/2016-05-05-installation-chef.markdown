@@ -12,6 +12,9 @@ Ce guide s’adresse à tout ceux qui ont des connaissances basiques en administ
 
 A noter que Chef-manage est un outil permettant de gérer le Chef-server via une interface web, cet outil est payant au delà de 25 Nodes ce qui sera largement suffisant pour effectuer des tests ou pour gérer une très petite infrastructure.
 
+Je vous conseille de lire la [présentation de Chef]({% post_url 2016-05-01-presentation-chef %}) avant de commençer 
+
+
 ## Installation Chef-server
 Tout d’abord, allez télécharger le programme d’installation sur le site officiel en fonction de votre distribution de Linux au moment de la rédaction de cet article, la dernière version Stable est la 12.5.0.
 
