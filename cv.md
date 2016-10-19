@@ -8,7 +8,7 @@ permalink: /cv/
 170 rue Marcel Mérieux, 69007 LYON <br/>
 tel : 06 81 00 97 55<br/>
 mail : wilfried@willou.com<br/>
-36 ans, Permis B, Voiture personnelle
+37 ans, Permis B, Voiture personnelle
 
 
 
@@ -23,7 +23,7 @@ mail : wilfried@willou.com<br/>
 # EXPÉRIENCES
 
 ## Création d’entreprise, Marketing Automation
-Juin 2015 - Novembre 2015 <br/>
+Juin 2015 - Aujourd'hui <br/>
 Conception d’un outil de Marketing Automation spécialisé dans l’emailing.
 
 ## Administrateur système, Responsable Déliverabilité
@@ -72,7 +72,6 @@ Chargé de mettre en place les procédures de référencement des sites internet
 *Freelance*<br/>
 Mars 2005 - Mai 2006<br/>
 Dans le cadre du développement de mon activité à titre d’indépendant, j’ai eu à coeur de maintenir avec mes clients une relation privilégiée et soutenue afin de maintenir une qualité de service irréprochable.
-
 
 ## Conception de sites internet
 *Adgensite, Lyon*<br/>
@@ -85,10 +84,10 @@ Septembre 2004 - Mars 2005
 *SellByTel, Lyon*<br/>
 Juin 2003 - Aout 2004
 
-- Technicien d'assistance téléphonique pour la société HP
-Diagnostic et résolution des problèmes techniques (pannes informatiques, bugs…) ou fonctionnels (modifications de documents, impressions…)
-Capacités d’écoute et de communication pour bien comprendre et analyser les besoins, et y répondre le plus efficacement possible
-Formation “à chaud” des nouveaux arrivants
+- Technicien d'assistance téléphonique pour la société HP 
+- Diagnostic et résolution des problèmes techniques (pannes informatiques, bugs…) ou fonctionnels (modifications de documents, impressions…). 
+- Capacités d’écoute et de communication pour bien comprendre et analyser les besoins, et apporter une réponse le plus efficacement possible. 
+- Formation “à chaud” des nouveaux arrivants
 
 ## Conception de sites internet
 *Proval, Lyon*<br/>
@@ -99,6 +98,7 @@ Création de sites internet, Webmastering
 # DIPLÔMES
 *Conservatoire National des Arts et Métiers (CNAM), Lyon,*
 DPCT Génie informatique d’entreprise
+
 - Algorithme et programmation,
 - Structures de données,
 - Réseaux,
@@ -106,5 +106,6 @@ DPCT Génie informatique d’entreprise
 - Systèmes d’exploitation
 
 *Lycée Joseph Haubtmann, Saint-Etienne*
+
 - BAC Pro Industries Graphiques, option Impression
 - BEP Conducteur Offset
