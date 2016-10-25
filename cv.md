@@ -22,7 +22,7 @@ mail : wilfried@willou.com<br/>
 
 # EXPÉRIENCES
 
-## Devop
+## Devop, Administrateur système
 *Synolia - Lyon*<br/>
 janvier 2016 - août 2016<br/>
 Mise en place d'un environnement de développement local basé sur docker pour les plate-formes magento, prestashop, sugarcrm, akeneo, orocrm. Refonte de l'ensemble des conteneurs applicatifs php, apache, nginx, mysql, postgresql.
@@ -31,7 +31,7 @@ Mise en place d'un environnement de développement local basé sur docker pour l
 Juin 2015 - Decembre 2015 <br/>
 Conception d’un outil de Marketing Automation spécialisé dans l’emailing.
 
-## Administrateur système, Responsable Déliverabilité
+## Devop, Administrateur système, Responsable Déliverabilité
 *Numerik-Art groupe Adthink Media, lyon*<br/>
 Décembre 2013 - Juin 2015 <br/>
 Responsable de la plate-forme d’envoi d’email (MailPerformance), refonte totale de la plate-forme
@@ -56,7 +56,7 @@ Gestion de la plate-forme de routage Powow3, amélioration des outils de suivi, 
 - Responsable des relations avec les fournisseurs de messagerie et suivi de la réputation de la plate-forme et des clients.<br/>
 - Conception de la plate-forme de routage Powow4, rédaction du cahier des charges, pilotage du projet, contrôle de la qualité.
 
-## Administrateur système
+## Devop, Administrateur système
 *Plebicom, Lyon*<br/>
 Novembre 2007 - Février 2012<br/>
 Chargé de la maintenance, du développement et de la gestion des évolutions techniques de la plate-forme d'hébergement et de traitement des données pour les sites www.ebuyclub.com, www.cashstore.fr, www.edengo.com.
