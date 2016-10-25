@@ -22,8 +22,13 @@ mail : wilfried@willou.com<br/>
 
 # EXPÉRIENCES
 
+## Devop
+*Synolia - Lyon*<br/>
+janvier 2016 - août 2016<br/>
+Mise en place d'un environnement de développement local basé sur docker pour les plate-formes magento, prestashop, sugarcrm, akeneo, orocrm. Refonte de l'ensemble des conteneurs applicatifs php, apache, nginx, mysql, postgresql.
+
 ## Création d’entreprise, Marketing Automation
-Juin 2015 - Aujourd'hui <br/>
+Juin 2015 - Decembre 2015 <br/>
 Conception d’un outil de Marketing Automation spécialisé dans l’emailing.
 
 ## Administrateur système, Responsable Déliverabilité
