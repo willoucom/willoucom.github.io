@@ -6,7 +6,7 @@ categories: Chef
 ---
 
 Vous voulez avoir à disposition un Chef-server pour faire des tests et évaluer la solution. En suivant ce guide vous aurez un serveur opérationnel en quelques minutes.
-
+<!--more-->
 ## Objectifs
 Ce guide s’adresse à tout ceux qui ont des connaissances basiques en administration Linux et qui veulent tester quelques Cookbooks trouvés sur le Supermarket afin de valider l’utilisation de cet outil pour leurs besoins. A la fin de ce guide, vous aurez un Chef-server fonctionnel, avec Chef-manage installé afin de vous aidez lors de la configuration initiale.
 

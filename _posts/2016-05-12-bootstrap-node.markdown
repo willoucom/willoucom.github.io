@@ -6,7 +6,7 @@ categories: Chef
 ---
 
 Le Bootstrapping consiste à configurer un Node de façon à ce que le Chef-server puisse le piloter.
-
+<!--more-->
 Bien qu’il soit possible d’utiliser Chef-manage pour gérer le serveur, je préfère utiliser l’outil Knife qui évite de jongler entre deux outils. Je ne traiterai donc pas l’utilisation de Chef-manage, sauf pour vérifier que les commandes ont fonctionné.
 
 ## Objectifs

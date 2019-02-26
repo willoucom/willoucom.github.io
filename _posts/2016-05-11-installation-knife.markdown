@@ -6,7 +6,7 @@ categories: Chef
 ---
 
 Knife est l’outil qui vous permettra de  gérer votre Chef-server ainsi que vos Nodes. Il s’installe et s’utilise sur votre poste de travail.
-
+<!--more-->
 ## Objectifs
 L’objectif de ce guide est de configurer un Chef-repo sur votre machine. Vous aurez besoin d’un Chef-server, vous pouvez utiliser un serveur que vous aurez [installé vous-même]({% post_url 2016-05-05-installation-chef %}) ou bien un serveur de démo fourni par Chef à l'adresse :  [https://manage.chef.io/](https://manage.chef.io/){:target="_blank_"}
 

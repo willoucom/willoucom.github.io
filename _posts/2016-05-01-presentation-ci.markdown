@@ -6,7 +6,7 @@ categories: CI
 ---
 
 L'intégration Continue (CI pour Continuous Integration) est un modèle d'optimisation de tâches complexes. Dans la plupart des cas, cela consiste à faire exécuter des jeux de tests et des compilations sur un serveur dédié.
-
+<!--more-->
 ## Objectifs
 Ce guide a pour objectif de vous donner les bases de vocabulaire et de concepts utilisés en Intégration Continue. Il existe à ce jour une très grande quantité d'outils d'Intégration Continue, il serait illusoire de vouloir tous les citer. Cependant des noms sortent du lot. Je traiterai séparément chaque outil.
 Pour bien appréhender ce guide, il est nécessaire de posséder des bases sur Git et de comprendre comment fonctionnent les branches.

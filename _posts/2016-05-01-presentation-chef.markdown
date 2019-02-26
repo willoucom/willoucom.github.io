@@ -6,7 +6,7 @@ categories: Chef
 ---
 
 Chef est un outil d’orchestation qui permet de gérer les configurations de différents serveurs et services.
-
+<!--more-->
 L’orchestration consiste à piloter la configuration d’un Node (un serveur) et à s’assurer que cette configuration est bien conforme à un ensemble de règles, appelées Recipes.
 
 L’objectif de ce type d’outils est de déployer la même configuration sur un ensemble de serveurs, par exemple pour industrialiser et automatiser la mise en production de nouveaux serveurs.
