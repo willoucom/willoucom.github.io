@@ -92,7 +92,7 @@ $ knife role create roletest
 
 Votre éditeur va s’ouvrir et un document au format json vous sera proposé :
 
-```
+```json
 {
   "name": "roletest",
   "description": "",
@@ -117,7 +117,7 @@ $ knife node edit monserveur.domaine.ext
 
 Ceci ouvrira votre éditeur texte avec un json comme ceci :
 
-```
+```json
 {
   "name": "monserveur.domaine.ext",
   "chef_environment": "_default",
@@ -138,7 +138,7 @@ Ajoutez votre nouveau Role dans la section “run_list” sous la forme :
 
 Votre fichier ressemblera à ceci :
 
-```
+```json
 {
   "name": "monserveur",
   "chef_environment": "_default",
@@ -233,7 +233,7 @@ $ knife role edit roletest
 
 Ajoutez dans run_list la Recipe ntp :
 
-```
+```json
 "run_list": [
   "recipe[ntp]"
 ],

@@ -54,27 +54,38 @@ Pour pouvoir appréhender facilement Chef, il est utile de pouvoir visualiser le
 
 Lancez les commandes :
 
-`
+```
 $ chef-server-ctl install chef-manage
 $ chef-server-ctl reconfigure
 $ chef-manage-ctl reconfigure
-`
+```
 
 ## Création du premier compte utilisateur
 L’outil __chef-server-ctl__ sert également à gérer les utilisateurs, le nom de la commande est user-create
 Remplacez les paramètres comme suit :
-
+```
 - *USER_NAME* = Nom du compte
 - *FIRST_NAME* = Prénom
 - *LAST_NAME* = Nom
 - *EMAIL* = Adresse email
 - *PASSWORD* = Mot de passe
-
-`chef-server-ctl user-create USER_NAME FIRST_NAME LAST_NAME EMAIL 'PASSWORD' --filename USER_NAME.pem`
+```
+Commande :
+```
+chef-server-ctl user-create \
+USER_NAME \
+FIRST_NAME \
+LAST_NAME \
+EMAIL \
+'PASSWORD' \
+--filename USER_NAME.pem
+```
 
 Le mot de passe sera visible dans l’history, pensez à nettoyer votre historique
 
-`history -c`
+```
+history -c
+```
 
 __Vous allez récupérer une clé qui porte le nom de l’utilisateur, sauvegardez-la en lieu sûr.__
 
@@ -84,11 +95,18 @@ Par défaut Chef-server vous permet de gérer plusieurs organisations, une Organ
 L’outil __chef-server-ctl__ sert également à gérer les organisations, le nom de la commande est org-create
 Remplacez les paramètres comme suit :
 
+```
 - *ORGANISATION_SHORTNAME* = Nom court de l’organisation (sans aucun espace ni caractère spécial)
 - *ORGANISATION_FULLNAME* = Nom long de l’organisation (peut être le même que ORGANISATION_SHORTNAME)
 - *USER_NAME* = Nom du premier utilisateur, qui sera par défaut administrateur, doit être un utilisateur existant
-
-`chef-server-ctl org-create ORGANISATION_SHORTNAME 'ORGANISATION_FULLNAME' --association_user USER_NAME --filename ORGANISATION_SHORTNAME-validator.pem`
+```
+Commande : 
+```
+chef-server-ctl org-create \
+ORGANISATION_SHORTNAME 'ORGANISATION_FULLNAME' \
+--association_user USER_NAME \
+--filename ORGANISATION_SHORTNAME-validator.pem
+```
 
 __Vous allez récupérer une clé qui porte le nom de l’organisation, sauvegardez-la en lieu sûr.__
 
