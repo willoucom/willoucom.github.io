@@ -8,7 +8,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:title/
 
 defaults:
   -
@@ -22,6 +22,8 @@ paginate: 9
 paginate_path: "/blog/page:num/"
 
 projects: 6
+
+excerpt_separator: <!--more-->
 
 personal:
   links:
