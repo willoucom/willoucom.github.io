@@ -3,6 +3,8 @@ layout: post
 title:  "Intégration Continue"
 date:   2016-05-01 11:15:32 +0000
 categories: CI
+image: /img/hello_world.jpeg
+bigimg: /img/path.jpg
 ---
 
 L'intégration Continue (CI pour Continuous Integration) est un modèle d'optimisation de tâches complexes. Dans la plupart des cas, cela consiste à faire exécuter des jeux de tests et des compilations sur un serveur dédié.

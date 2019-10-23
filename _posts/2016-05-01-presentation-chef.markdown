@@ -3,6 +3,8 @@ layout: post
 title:  "Présentation de Chef"
 date:   2016-05-01 10:08:44 +0000
 categories: Chef
+image: /img/hello_world.jpeg
+bigimg: /img/path.jpg
 ---
 
 Chef est un outil d’orchestation qui permet de gérer les configurations de différents serveurs et services.

@@ -3,6 +3,8 @@ layout: post
 title:  "Installation de Chef-DK et Knife"
 date:   2016-05-11 14:08:44 +0000
 categories: Chef
+image: /img/hello_world.jpeg
+bigimg: /img/path.jpg
 ---
 
 Knife est l’outil qui vous permettra de  gérer votre Chef-server ainsi que vos Nodes. Il s’installe et s’utilise sur votre poste de travail.

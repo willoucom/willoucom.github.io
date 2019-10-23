@@ -3,6 +3,8 @@ layout: post
 title:  "Installation de Chef-server"
 date:   2016-05-05 14:08:44 +0000
 categories: Chef
+image: /img/hello_world.jpeg
+bigimg: /img/path.jpg
 ---
 
 Vous voulez avoir à disposition un Chef-server pour faire des tests et évaluer la solution. En suivant ce guide vous aurez un serveur opérationnel en quelques minutes.

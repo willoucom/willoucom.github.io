@@ -3,6 +3,8 @@ layout: post
 title:  "Bootstrap d’un Node"
 date:   2016-05-12 13:30:44 +0000
 categories: Chef
+image: /img/hello_world.jpeg
+bigimg: /img/path.jpg
 ---
 
 Le Bootstrapping consiste à configurer un Node de façon à ce que le Chef-server puisse le piloter.
