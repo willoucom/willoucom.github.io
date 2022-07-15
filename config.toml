@@ -1,0 +1,4 @@
+baseURL = ''
+languageCode = 'en-US'
+title = 'Wilfried JEANNIARD'
+theme = "proman"
