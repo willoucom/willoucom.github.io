@@ -1,0 +1,94 @@
+baseURL: http://something-fresh.org/
+languageCode: en-us
+title: Wilfried JEANNIARD
+
+module:
+  # uncomment line below for local development of module
+  # workspace: hugo.work
+  imports:
+    - path: github.com/StefMa/hugo-fresh
+    - path: github.com/hugomods/images
+
+# Disables warnings
+disableKinds:
+- taxonomy
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description:
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/logo.png
+    link: /
+    # Default width/height. Uncomment if you need to change
+    width: 36
+    height: 36
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Code. Test. Deploy.
+    # Hero subtitle (optional)
+    subtitle: Over 20 years in software development, helping ambitious organizations with Agile development procedures, quality and compliance metrics.
+    # Button text
+    buttontext: Contact me on Linkedin
+    # Where the main hero button links to
+    buttonlink: "https://www.linkedin.com/in/wilfriedjeanniard/"
+    # Hero image (from static/images/___)
+    # image: illustrations/worker.svg
+    image: avatar.png
+ 
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Linkedin
+    url: https://www.linkedin.com/in/wilfriedjeanniard/
+  - title: GitHub
+    url: https://www.github.com/willoucom/
+  - title: Products
+    sublinks:
+    - title: The Keypad
+      url: /keypad/
+    - title: 3-in-1 USB Retro Adapter
+      url: /3-in-1-retro/
+    - title: USB Arcade Spinner
+      url: /arcade-spinner/
+
+  section1:
+    title: Products...
+    subtitle: ...created with love
+    tiles:
+    - title: The Keypad
+      icon: mouse-globe
+      text: USB Keypad for power users
+      url: /keypad/
+      buttonText: More...
+    - title: 3-in-1 USB Retro Adapter
+      icon: mouse-globe
+      text: Use your retro controller on a modern computer
+      url: /3-in-1-retro/
+      buttonText: More...
+    - title: USB Arcade Spinner
+      icon: mouse-globe
+      text: Revive Arkanoid with modern components
+      url: /arcade-spinner/
+      buttonText: More...
+
+
+  images:
+    alignment_center_class_name: d-block text-center
+    alignment_end_class_name: float-end ms-2
+    alignment_start_class_name: float-start me-2
+    class_name: img-fluid
+    figure_caption_class_name: figure-caption
+    figure_class_name: figure
+    figure_image_class_name: figure-img
+    modern_format: webp
