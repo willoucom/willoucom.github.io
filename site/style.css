@@ -14,13 +14,18 @@
 }
 
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
 
   --encre: #111111;
   --gris: #5a5a5a;
   --filet: #d8d8d8;
   --marine: #1a3d6d;
   --papier: #ffffff;
+
+  /* Couleur du texte posé sur un aplat marine. Distincte de --papier, qui est le
+     fond de la page : les deux se confondent en thème clair, mais pas dans un thème
+     où le fond de page est sombre alors que l'aplat, lui, reste clair.            */
+  --sur-marine: #ffffff;
 
   /* Échelle des corps */
   --corps-mention: 0.85rem;
@@ -38,6 +43,29 @@
 
   --mesure: 65ch;
   --marge: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+/* Thème sombre, suivant la préférence déclarée au système d'exploitation.
+
+   Ce bloc ne redéfinit que des couleurs : la trame verticale, l'échelle des corps
+   et la mesure restent déclarées une seule fois, plus haut. Un navigateur qui ne
+   connaît pas la requête l'ignore entièrement et sert le thème clair intact.
+
+   Les valeurs ne sont pas l'inversion du thème clair. Le fond n'est pas noir et
+   l'encre n'est pas blanche : les extrêmes font vibrer le texte fin. Le gris et le
+   marine, eux, doivent s'éclaircir bien au-delà de leur symétrique pour rester
+   lisibles — le marine du thème clair est illisible sur un fond sombre.          */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --encre: #e6e6e6;
+    --gris: #9a9a9a;
+    --filet: #323232;
+    --marine: #8fb5e8;
+    --papier: #141414;
+
+    --sur-marine: #141414;
+  }
 }
 
 *,
@@ -159,7 +187,7 @@ h1 {
 
 .courriel:hover {
   background: var(--marine);
-  color: var(--papier);
+  color: var(--sur-marine);
 }
 
 .liens {
