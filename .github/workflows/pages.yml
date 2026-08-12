@@ -1,0 +1,38 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un déploiement à la fois, sans annuler celui en cours : interrompre une publication
+# en vol laisserait le site dans un état intermédiaire.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+
+      # Le site est du HTML statique écrit à la main : rien à construire.
+      # Seul site/ est publié, sa racine devient la racine du site.
+      - name: Téléverser le contenu du site
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./site
+
+      - name: Déployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

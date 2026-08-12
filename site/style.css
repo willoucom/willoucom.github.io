@@ -1,0 +1,329 @@
+/* ==========================================================================
+   Système typographique
+
+   Les grands corps reçoivent un interlignage exprimé en multiple de la ligne
+   de base, pour qu'un titre n'introduise jamais de décalage dans la trame.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+
+  --encre: #111111;
+  --gris: #5a5a5a;
+  --filet: #d8d8d8;
+  --marine: #1a3d6d;
+  --papier: #ffffff;
+
+  /* Échelle des corps */
+  --corps-mention: 0.85rem;
+  --corps-texte: 1.0rem;
+  --corps-accroche: 1.25rem;
+  --corps-nom: 1.5rem;
+
+  /* Trame verticale */
+  --ligne: 1.7rem;
+  --demi: 0.85rem;
+  --quart: 0.25rem;
+  --ligne-et-demie: 2.55rem;
+  --deux-lignes: 3.4rem;
+  --trois-lignes: 5.1rem;
+
+  --mesure: 65ch;
+  --marge: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: var(--deux-lignes) var(--marge) var(--trois-lignes);
+  background: var(--papier);
+  color: var(--encre);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: var(--corps-texte);
+  line-height: var(--ligne);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+body > * {
+  max-width: var(--mesure);
+  margin-inline: auto;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--marine);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--marine);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- Bandeau ----------
+   Trois groupes : identité, propos, contact. 1,5 ligne entre eux.           */
+
+.bandeau {
+  padding-bottom: var(--ligne);
+}
+
+.identite {
+  display: flex;
+  align-items: center;
+  gap: var(--ligne);
+  margin-bottom: var(--ligne-et-demie);
+}
+
+/* Le portrait est calé sur la hauteur du bloc nom + fonction, soit 2,5 lignes,
+   pour que la rangée entière retombe sur la trame.                          */
+.portrait {
+  width: 4.25rem;
+  height: 4.25rem;
+  flex: none;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--corps-nom);
+  line-height: var(--ligne-et-demie);
+  font-weight: 700;
+}
+
+.fonction {
+  color: var(--gris);
+}
+
+.accroche {
+  margin-bottom: var(--demi);
+  font-size: var(--corps-accroche);
+  line-height: var(--ligne);
+  font-weight: 600;
+  letter-spacing: -0.012em;
+}
+
+.anciennete {
+  color: var(--gris);
+  margin-bottom: var(--ligne);
+}
+
+/* Le bouton et les deux liens forment une seule rangée : les liens sont centrés
+   sur la hauteur du bouton, quelle que soit la hauteur de l'un ou de l'autre.  */
+.contact-rapide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ligne);
+  margin-bottom: var(--demi);
+}
+
+.courriel {
+  display: inline-block;
+  padding: var(--demi) var(--ligne);
+  border: 1px solid var(--marine);
+  color: var(--marine);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.courriel:hover {
+  background: var(--marine);
+  color: var(--papier);
+}
+
+.liens {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--corps-mention);
+}
+
+.liens a {
+  color: var(--gris);
+}
+
+/* ---------- Sections ---------- */
+
+main > section {
+  padding-top: var(--ligne);
+  border-top: 1px solid var(--filet);
+  margin-bottom: var(--ligne);
+}
+
+/* La dernière section se ferme par un filet, pour que ce qui suit le contenu
+   soit posé sur un trait comme le contenu l'était sous celui du haut.         */
+main > section:last-child {
+  padding-bottom: var(--ligne);
+  border-bottom: 1px solid var(--filet);
+  margin-bottom: 0;
+}
+
+h2 {
+  margin: 0 0 var(--ligne);
+  font-size: var(--corps-mention);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--marine);
+}
+
+/* ---------- Profil ---------- */
+
+.profil p + p {
+  margin-top: var(--ligne);
+}
+
+/* Les marges par défaut d'une liste valent 1 em et sortiraient de la trame :
+   on les ramène à la ligne de base, de part et d'autre.                      */
+.profil ul {
+  margin: var(--ligne) 0;
+  padding-left: 1.2rem;
+}
+
+/* ---------- Parcours ---------- */
+
+.parcours ol {
+  list-style: none;
+  margin: 0;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.parcours li {
+  display: grid;
+  row-gap: var(--quart);
+  padding-bottom: var(--ligne);
+  margin-bottom: var(--ligne);
+  border-bottom: 1px solid var(--filet);
+}
+
+.parcours li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.parcours li p {
+  margin: 0;
+}
+
+.dates {
+  color: var(--gris);
+  font-size: var(--corps-mention);
+  letter-spacing: 0.02em;
+}
+
+.entreprise {
+  font-weight: 600;
+}
+
+.role {
+  color: var(--gris);
+  font-size: var(--corps-mention);
+}
+
+.secteur {
+  color: var(--marine);
+}
+
+.echelle {
+  color: var(--gris);
+  font-size: var(--corps-mention);
+}
+
+@media (min-width: 46em) {
+  .parcours ol {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: var(--demi);
+  }
+
+  .parcours li {
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+
+  .role,
+  .secteur,
+  .echelle {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Projets ---------- */
+
+.projets ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projets li + li {
+  margin-top: var(--demi);
+}
+
+.projets a {
+  display: block;
+  padding: var(--demi) var(--ligne);
+  border: 1px solid var(--filet);
+  color: inherit;
+  text-decoration: none;
+}
+
+.projets a:hover {
+  border-color: var(--marine);
+}
+
+.projets .nom {
+  display: block;
+  font-weight: 600;
+  color: var(--marine);
+}
+
+.projets .resume {
+  display: block;
+  color: var(--gris);
+  font-size: var(--corps-mention);
+}
+
+/* ---------- Contact ---------- */
+
+.contact h2 {
+  font-size: var(--corps-accroche);
+  line-height: var(--ligne);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: -0.012em;
+  color: var(--encre);
+  margin-bottom: var(--ligne);
+}
